@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "c:/Users/PetteriSuur-Askola/robocorp/level1/.",
+        "c:/Users/PetteriSuur-Askola/robocorp/level1/src"
+    ],
+    "python.terminal.activateEnvironment": false
+}

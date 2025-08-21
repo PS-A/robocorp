@@ -1,6 +1,7 @@
 output/*
 !output/.gitkeep
 __pycache__/
+.env
 venv/
 temp/
 .rpa/
@@ -17,3 +18,4 @@ temp/
 testrun/*
 .~lock*
 *.pkl
+vault.json
