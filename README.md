@@ -15,6 +15,9 @@ Steps included:
 - Creating a PDF-file from site HTML data.
 - Uploading to control room, running and scheduling the process.
 
+## Level 2
+Working through Level 2 certification, which is more hands-on and on your own.
+
 ## Disclaimers
 
 ## License
