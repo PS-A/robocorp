@@ -1,43 +1,41 @@
 # Robocorp Practice
-Repo for Robocorp learning and automation scripts, starting with Robocorp certifications Level 1 - 3.
+Repo for Robocorp Developer Certification training (Levels 1–3).  
+This is hands-on automation practice using Robocorp’s tools, Control Room, and Python.
 
-## Level 1
-Started working through Level 1 certification, which is basically just getting started-section and initializations of repo.  
+## About
+Practicing Robocorp automation by completing the official certification levels.  
+Focus on browser automation, data handling, PDF/report generation, and running robots both locally and in Control Room.
 
-Steps included:
-- Extension downloaded.
-- Repo skeleton structure.
-- Browser launch.
-- Logging in.
-- Downloading a Excel-file.
-- Read data from Excel.
-- Filling a form based on Excel data.
-- Creating a PDF-file from site HTML data.
-- Uploading to control room, running and scheduling the process.
+## Level 1 - Getting Started
+Basic setup and first automation:
+- Installed extensions and initialized the repo.
+- Launched browser and logged in.
+- Downloaded Excel file and read data.
+- Filled form based on Excel input.
+- Generated PDF from HTML.
+- Uploaded to Control Room, ran successfully, and scheduled the process.
 
-## Level 2
-Working through Level 2 certification, which is more hands-on and on your own.  
-You are given definitions for the robot after which you will build the robot up to the required specs.  
+## Level 2 - Robot Build from Specs
+Independent robot build according to given requirements:
+- Opened robot order website and handled modal dialogs.
+- Pulled orders from Control Room asset (orders.csv).
+- Looped through orders, filling the form automatically.
+- Captured screenshots of receipts.
+- Created PDFs and embedded screenshots.
+- Archived all receipts into a ZIP.
+- Designed to run out-of-the-box both locally and in Control Room.
 
-Steps included:
-- Opening robot order website.
-- Closing possible website modal.
-- Getting orders from .csv asset.
-- Looping through orders.
-- Filling the form.
-- Screenshotting receipt.
-- Creating a PDF and embedding SS to it.
-- Archiving PDF receipts.
+### Running Notes
+In Control Room:
+- Create an asset named orders.csv with required headers.
+- Artifacts (PDFs, screenshots, archive) are collected from output/.
 
-Has to work out-of-the-box.
+Locally:
+- Create assets.json with reference to orders.csv.
 
 ## Disclaimers
-Level 2 robot running in CR:
-- Create an Asset named orders.csv (CSV with the required headers).
-- Run the task; artifacts are collected from output/.
-
-Level 2 robot running locally:
-- Create assets.json with orders.csv.
+- Training/learning code based on Robocorp certification material.
+- Not production code, but written with clean repo structure and best practices (env handling, no secrets committed).
 
 ## License
 This project is licensed under the MIT License.  
