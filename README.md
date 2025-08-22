@@ -17,9 +17,27 @@ Steps included:
 
 ## Level 2
 Working through Level 2 certification, which is more hands-on and on your own.  
-You are given definitions for the robot after which you will build the robot up to the required specs.
+You are given definitions for the robot after which you will build the robot up to the required specs.  
+
+Steps included:
+- Opening robot order website.
+- Closing possible website modal.
+- Getting orders from .csv asset.
+- Looping through orders.
+- Filling the form.
+- Screenshotting receipt.
+- Creating a PDF and embedding SS to it.
+- Archiving PDF receipts.
+
+Has to work out-of-the-box.
 
 ## Disclaimers
+Level 2 robot running in CR:
+- Create an Asset named orders.csv (CSV with the required headers).
+- Run the task; artifacts are collected from output/.
+
+Level 2 robot running locally:
+- Create assets.json with orders.csv.
 
 ## License
 This project is licensed under the MIT License.  
