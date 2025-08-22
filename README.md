@@ -16,7 +16,8 @@ Steps included:
 - Uploading to control room, running and scheduling the process.
 
 ## Level 2
-Working through Level 2 certification, which is more hands-on and on your own.
+Working through Level 2 certification, which is more hands-on and on your own.  
+You are given definitions for the robot after which you will build the robot up to the required specs.
 
 ## Disclaimers
 
