@@ -19,3 +19,4 @@ testrun/*
 .~lock*
 *.pkl
 vault.json
+assets.json
