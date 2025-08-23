@@ -6,7 +6,7 @@ This is hands-on automation practice using Robocorp’s tools, Control Room, and
 Practicing Robocorp automation by completing the official certification levels.  
 Focus on browser automation, data handling, PDF/report generation, and running robots both locally and in Control Room.
 
-## Level 1 - Getting Started
+## Level 1 - Getting Started (guided setup)
 Basic setup and first automation:
 - Installed extensions and initialized the repo.
 - Launched browser and logged in.
@@ -15,7 +15,7 @@ Basic setup and first automation:
 - Generated PDF from HTML.
 - Uploaded to Control Room, ran successfully, and scheduled the process.
 
-## Level 2 - Robot Build from Specs
+## Level 2 - Robot Build from Specs (independent build)
 Independent robot build according to given requirements:
 - Opened robot order website and handled modal dialogs.
 - Pulled orders from Control Room asset (orders.csv).
@@ -33,9 +33,20 @@ In Control Room:
 Locally:
 - Create assets.json with reference to orders.csv.
 
+## Level 3 - Work Data Management (producer-consumer)
+Guided work data management build with producer-consumer setup.
+Steps included:
+- Downloading JSON traffic data.
+- Producing work items from JSON data.
+- Creating a consumer step to process work items.
+- Using Control Room to run the producer → consumer chain.
+- Understanding best practices for scalable automation pipelines.
+
+## Extras
+This repo will also serve as a sandbox for personal robots beyond the certifications. Experiments, small automations, and side projects.
+
 ## Disclaimers
-- Training/learning code based on Robocorp certification material.
-- Not production code, but written with clean repo structure and best practices (env handling, no secrets committed).
+This repo is based on Robocorp certification exercises. While not production code, it follows good practices (clean repo structure, environment variables for secrets, no sensitive data committed).
 
 ## License
 This project is licensed under the MIT License.  
