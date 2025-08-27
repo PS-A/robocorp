@@ -54,6 +54,41 @@ A weekend project showcasing a producer–consumer process in Robocorp:
 - Outputs are archived as run artifacts in Control Room.
 - Scheduled to run weekly via Control Room scheduler.
 
+#### Running locally
+The News Digest process is built as a two-step producer–consumer. Locally you can test both sides using the `FileAdapter` for work items.
+
+1. Create an input work item JSON
+Place it under `devdata/work-items-in/input/1/item.json`:
+```json
+{
+  "NEWS_KEYWORD": "Porsche",
+  "FROM_DATE": "WEEKLY",
+  "SORT_BY": "popularity"
+}
+```
+Supported FROM_DATE values:
+"NOW" / "TODAY" → today’s date
+"YESTERDAY" / "DAILY" → yesterday
+"WEEKLY" → 7 days back
+"MONTHLY" → 30 days back
+Or provide an explicit "YYYY-MM-DD" string
+
+2. Run the producer
+bash
+Copy code
+RC_WORKITEM_ADAPTER=FileAdapter rcc run -t produce_news_data
+This queries the NewsAPI and generates work items under output/work-items.
+
+3. Run the consumer
+bash
+Copy code
+RC_WORKITEM_ADAPTER=FileAdapter rcc run -t consume_news_data
+This consumes the items and creates a PDF digest into the output/ folder.
+
+4. Inspect artifacts
+After a Control Room run, the PDF will appear under the run’s Artifacts tab (alongside log.html, console.txt, etc.).
+Locally, check the output/ folder for News_digest_<keyword>_from_<date>.pdf.
+
 ## Disclaimers
 This repo is based on Robocorp certification exercises. While not production code, it follows good practices (clean repo structure, environment variables for secrets, no sensitive data committed).
 
