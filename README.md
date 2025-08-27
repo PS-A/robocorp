@@ -49,7 +49,7 @@ This repo will also serve as a sandbox for personal robots beyond the certificat
 A weekend project showcasing a producer–consumer process in Robocorp:
 
 - Takes optional input parameters (keywords, time ranges, sort order).
-- Producer queries the free international NewsAPI and creates work items.
+- Producer queries the free international [NewsAPI](https://newsapi.org/) and creates work items.
 - Consumer turns each work item into a PDF digest.
 - Outputs are archived as run artifacts in Control Room.
 - Scheduled to run weekly via Control Room scheduler.
