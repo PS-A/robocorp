@@ -57,14 +57,19 @@ A weekend project showcasing a producer–consumer process in Robocorp:
 #### Running locally
 The News Digest process is built as a two-step producer–consumer. Locally you can test both sides using the `FileAdapter` for work items.
 
-1. Create an input work item JSON
-Place it under `devdata/work-items-in/input/1/item.json`:
+1. Create an input work item JSON  
+Place it under `devdata/work-items-in/test-input-for-consumer/work-items.json`:
 ```json
-{
-  "NEWS_KEYWORD": "Porsche",
-  "FROM_DATE": "WEEKLY",
-  "SORT_BY": "popularity"
-}
+[
+    {
+        "payload": {
+            "NEWS_KEYWORD": "Porsche",
+            "FROM_DATE": "YESTERDAY",
+            "SORT_BY": "popularity"
+        },
+        "files": {}
+    }
+]
 ```
 Supported FROM_DATE values:
 "NOW" / "TODAY" → today’s date
@@ -73,19 +78,19 @@ Supported FROM_DATE values:
 "MONTHLY" → 30 days back
 Or provide an explicit "YYYY-MM-DD" string
 
-2. Run the producer
+2. Run the producer  
 bash
 Copy code
 RC_WORKITEM_ADAPTER=FileAdapter rcc run -t produce_news_data
 This queries the NewsAPI and generates work items under output/work-items.
 
-3. Run the consumer
+3. Run the consumer  
 bash
 Copy code
 RC_WORKITEM_ADAPTER=FileAdapter rcc run -t consume_news_data
 This consumes the items and creates a PDF digest into the output/ folder.
 
-4. Inspect artifacts
+4. Inspect artifacts  
 After a Control Room run, the PDF will appear under the run’s Artifacts tab (alongside log.html, console.txt, etc.).
 Locally, check the output/ folder for News_digest_<keyword>_from_<date>.pdf.
 
