@@ -98,6 +98,6 @@ Locally, check the output/ folder for News_digest_<keyword>_from_<date>.pdf.
 This repo is based on Robocorp certification exercises. While not production code, it follows good practices (clean repo structure, environment variables for secrets, no sensitive data committed).
 
 ## License
-This project is licensed under the MIT License.  
+This project is licensed under the [MIT License](LICENSE).  
 MIT was chosen because it’s simple, permissive, and widely adopted in open-source.  
 It allows anyone to use, modify, and share the code freely, while keeping attribution and liability disclaimers clear.
