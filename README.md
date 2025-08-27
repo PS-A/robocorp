@@ -1,9 +1,9 @@
 # Robocorp Practice
-Repo for Robocorp Developer Certification training (Levels 1–3).  
+Repo for Robocorp Developer Certification training (Levels 1–3) and some extras.  
 This is hands-on automation practice using Robocorp’s tools, Control Room, and Python.
 
 ## About
-Practicing Robocorp automation by completing the official certification levels.  
+Practicing Robocorp automation by completing the official certification levels and doing some weekend projects of my own.  
 Focus on browser automation, data handling, PDF/report generation, and running robots both locally and in Control Room.
 
 ## Level 1 - Getting Started (guided setup)
@@ -44,6 +44,15 @@ Steps included:
 
 ## Extras
 This repo will also serve as a sandbox for personal robots beyond the certifications. Experiments, small automations, and side projects.
+
+### News Digest
+A weekend project showcasing a producer–consumer process in Robocorp:
+
+- Takes optional input parameters (keywords, time ranges, sort order).
+- Producer queries the free international NewsAPI and creates work items.
+- Consumer turns each work item into a PDF digest.
+- Outputs are archived as run artifacts in Control Room.
+- Scheduled to run weekly via Control Room scheduler.
 
 ## Disclaimers
 This repo is based on Robocorp certification exercises. While not production code, it follows good practices (clean repo structure, environment variables for secrets, no sensitive data committed).
